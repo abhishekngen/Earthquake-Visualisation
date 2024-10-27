@@ -1,0 +1,144 @@
+body { 
+  font-family: sans-serif;
+  background: #fafcff;
+  font-size: 13px;
+  padding: 12px;
+} 
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h2 {
+  text-align: center;
+}
+
+#dropdownDiv {
+  text-align: center;
+  padding-bottom: 12px;
+  padding-top: 5px;
+}
+
+.centre_aligned_div {
+  text-align: center;
+}
+
+.div_block {
+  display: inline;
+  padding-right: 0px;
+}
+
+#dotMap {
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+#charts {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.div_left {
+  float: left;
+}
+
+.div_centre {
+  text-align: center;
+}
+
+.div_right {
+  float: right;
+}
+
+.sphere {
+  fill: lightblue;
+  stroke: black;
+}
+
+.point {
+  opacity: 0.7;
+}
+
+.point:hover{
+  stroke: black;
+}
+
+.country {
+  fill: lightgreen;
+  stroke: black;
+  stroke-width: 0.1px;
+}
+
+#tooltip {
+  position: absolute;
+  display: none;
+  background: white;
+  box-shadow: 3px 3px 3px 0px rgb(92 92 92 / 0.5);
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 8px;
+  min-width: 100px;
+  color: #333;
+}
+.tooltip-title {
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+}
+.tooltip-text {
+  color: black;
+}
+#tooltip ul {
+  margin: 5px 0 0 0;
+  padding-left: 20px;
+}
+
+/* Axes */
+.axis line {
+  fill: none;
+  stroke: #ddd;
+  shape-rendering: crispEdges;
+}
+.axis text {
+  font-size: 13px;
+  fill: #6b6b6b;
+}
+.x-axis .axis-title {
+  font-size: 1.75em;
+  fill: black;
+}
+.axis-title {
+  font-size: 1.8em;
+  fill: black;
+  text-anchor: start;
+}
+
+.colourBarRect {
+  fill: white;
+  opacity: 0.5;
+  stroke: black;
+  border-radius: 10px;
+}
+
+.legend text {
+  font-family: sans-serif;
+  font-size: 0.75em;
+  fill: #635F5D;
+  text-anchor: start;
+  dominant-baseline: central;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.legend g {
+  text-align: left;
+}
+
+.bar:hover {
+  stroke: black;
+  stroke-width: 2;
+}

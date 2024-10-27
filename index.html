@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Earthquake Visualisation</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/topojson@3.0.2/dist/topojson.min.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Titles -->
+    <h1>21st Century Significant Earthquake Data</h1>
+    <h2>Year Range:</h2>
+
+    <!-- Div containing dropdowns -->
+    <div id="dropdownDiv"> 
+      <div class="div_block">
+        Start Year:
+      <select id="yearStart"></select>
+        </div>
+        <div class="div_block">
+          End Year:
+      <select id="yearEnd"></select>
+      </div>
+    </div>
+
+    <!-- Div containing extra info text -->
+    <div class="centre_aligned_div">
+      <i>(Earthquake data visualised below in all three views is from specified time range)</i>
+    </div>
+
+    <!-- Div containing world map and magnitude/depth legends -->
+    <div id="dotMap">
+      <svg xmlns:xhtml="http://www.w3.org/1999/xhtml" id="svg0" width="250" height="350"></svg>
+      <svg id="svg1" width="700" height="400"></svg>
+      <svg xmlns:xhtml="http://www.w3.org/1999/xhtml" id="svg0_5" width="250" height="350"></svg>
+    </div>
+
+    <!-- Div containing bar chart, pie chart and continent colour legend -->
+    <div id="charts">
+      <svg id="svg3_5" width="250" height="320"></svg>
+      <svg id="svg3" width="300" height="320"></svg>
+      <svg xmlns:xhtml="http://www.w3.org/1999/xhtml" id="svg2" width="650" height="380">
+        <foreignobject width="200" height="80" x="450" y="10">
+          <text class="legend" style="font-size: 15px">Y-Axis:</text>
+          <select id="barchart-yAxis-selection">
+            <option value="avgDepth">Average Depth</option>
+            <option value="earthquakeNumber">Number of Earthquakes</option>
+            <option value="avgMagnitude">Average Magnitude</option>
+          </select>
+        </foreignobject>
+      </svg>      
+    </div>
+
+    <!-- Tooltip div -->
+    <div id="tooltip"></div>
+
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
